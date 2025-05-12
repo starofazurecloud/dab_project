@@ -34,7 +34,6 @@ targets:
       name_prefix: '[testing] '
     workspace:
       host: your-workspace-url # replace with your Workspace URL
-      # We explicitly specify /Workspace/Users/admin@pathfinder-analytics.net to make sure we only have a single copy.
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     permissions:
       - service_principal_name: your-service-principal-name # update with your service principal name
@@ -51,7 +50,6 @@ targets:
         default: false
     workspace:
       host: your-workspace-url # replace with your Workspace URL
-      # We explicitly specify /Workspace/Users/admin@pathfinder-analytics.net to make sure we only have a single copy.
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     permissions:
       - service_principal_name: your-service-principal-name # update with your service principal name
