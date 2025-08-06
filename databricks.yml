@@ -21,7 +21,7 @@ targets:
     mode: development
     default: true
     workspace:
-      host: your-workspace-url # replace with your Workspace URL
+      host: https://adb-1488651838090041.1.azuredatabricks.net # replace with your Workspace URL
 
   test:
     mode: production
@@ -33,13 +33,13 @@ targets:
     presets:
       name_prefix: '[testing] '
     workspace:
-      host: your-workspace-url # replace with your Workspace URL
+      host: https://adb-4115473030874689.9.azuredatabricks.net # replace with your Workspace URL
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
-    permissions:
-      - service_principal_name: your-service-principal-name # update with your service principal name
-        level: CAN_MANAGE
-    run_as:
-      service_principal_name: your-service-principal-name # update with your service principal name
+    # permissions:
+    #   - service_principal_name: your-service-principal-name # update with your service principal name
+    #     level: CAN_MANAGE
+    # run_as:
+    #   service_principal_name: your-service-principal-name # update with your service principal name
 
   prod:
     mode: production
@@ -49,10 +49,10 @@ targets:
       dev_flag:
         default: false
     workspace:
-      host: your-workspace-url # replace with your Workspace URL
+      host: https://adb-577357246756644.4.azuredatabricks.net # replace with your Workspace URL
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
-    permissions:
-      - service_principal_name: your-service-principal-name # update with your service principal name
-        level: CAN_MANAGE
-    run_as:
-      service_principal_name: your-service-principal-name # update with your service principal name
+    # permissions:
+    #   - service_principal_name: your-service-principal-name # update with your service principal name
+    #     level: CAN_MANAGE
+    # run_as:
+    #   service_principal_name: your-service-principal-name # update with your service principal name
