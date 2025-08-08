@@ -35,11 +35,11 @@ targets:
     workspace:
       host: https://adb-4115473030874689.9.azuredatabricks.net # replace with your Workspace URL
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
-    # permissions:
-    #   - service_principal_name: your-service-principal-name # update with your service principal name
-    #     level: CAN_MANAGE
-    # run_as:
-    #   service_principal_name: your-service-principal-name # update with your service principal name
+    permissions:
+      - service_principal_name: 7f560aae-c70b-43cf-9b6d-dab049cda62f # update with your service principal name ( Client ID )
+        level: CAN_MANAGE
+    run_as:
+      service_principal_name: 7f560aae-c70b-43cf-9b6d-dab049cda62f # update with your service principal name ( Client ID )
 
   prod:
     mode: production
@@ -51,8 +51,8 @@ targets:
     workspace:
       host: https://adb-577357246756644.4.azuredatabricks.net # replace with your Workspace URL
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
-    # permissions:
-    #   - service_principal_name: your-service-principal-name # update with your service principal name
-    #     level: CAN_MANAGE
-    # run_as:
-    #   service_principal_name: your-service-principal-name # update with your service principal name
+    permissions:
+      - service_principal_name: 0a9a7acf-29da-4011-bb0f-056961ca4300 # update with your service principal name ( Client ID )
+        level: CAN_MANAGE
+    run_as:
+      service_principal_name: 0a9a7acf-29da-4011-bb0f-056961ca4300 # update with your service principal name ( Client ID )
