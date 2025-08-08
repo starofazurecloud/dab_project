@@ -4,7 +4,7 @@ setup(
     name="dab_project",
     version="0.0.1",
     description="This contains the code in the ./src directory of the project",
-    author="Your Name",
+    author="Manoj Sahoo",
     packages=find_packages(where="./src"),
     package_dir={"":"./src"},
     install_requires=["setuptools"],
